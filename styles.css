@@ -1,10 +1,23 @@
 header {
    display: flex; 
+   flex-direction: row;
    justify-content: center;
 }
-header > nav {
+
+nav {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+}
+ul {
+    list-style-type: circle;
+}
+a:link {
+    color: green;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: blueviolet; 
 }
