@@ -21,3 +21,12 @@ a:hover {
 a:visited {
     color: blueviolet; 
 }
+p {
+    text-wrap: wrap;
+    text-align: center;
+    padding: 5px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
