@@ -18,16 +18,29 @@
             </ul>
         </nav>
     <main>
-        <p>
+       <p>
             Have questions about our products? Want more information about our supply line? <br> Need clarification about our process? <br> Use the the contact form below and someone will get back with you promptly. 
         </p>
         <form class="form" action="#">
-            <label for="name">Name</label>
-                <input required type="text" id="name"/>
-            <label for="message">Message</label>
-                <input placeholder="Type your message here." type="text" id="message"/>
-            <label for="email">Email</label>
-                <input required type="email" id="email" />
+           <div class="pretty">
+                <label for="name">Name</label>
+                <input required aria-describedby="name" type="text" id="name"/> </div>
+            <div class="pretty">
+                <label for="message">Message</label>
+                <input aria-describedby="type your message here" placeholder="Type your message here." type="text" id="message"/></div>
+            <div class="pretty">
+                <label for="email">Email</label>
+                <input required aria-describedby="type your email here" type="email" id="email" /></div>
+            <button>Submit</button>
+        </form>
+        <form class="form" action="#">
+           <div class="pretty"><label for="name">Name</label>
+                <input required type="text" id="name"/> </div>
+            <div class="pretty"><label for="message">Message</label>
+                <input placeholder="Type your message here." type="text" id="message"/></div>
+            <div class="pretty"><label for="email">Email</label>
+                <input required type="email" id="email" /></div>
+            <button>Submit</button>
         </form>
     </main>
     <footer></footer>
