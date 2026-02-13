@@ -1,48 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox Form Demo</title>
-    <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Contact Us</h1>
+      <h1>Contact Us</h1>
     </header>
     <nav class="nav">
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="main.html">Landing Page</a></li>
-            </ul>
-        </nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="main.html">Landing Page</a></li>
+      </ul>
+    </nav>
     <main>
-       <p>
-            Have questions about our products? Want more information about our supply line? <br> Need clarification about our process? <br> Use the the contact form below and someone will get back with you promptly. 
-        </p>
-        <form class="form" action="#">
-           <div class="pretty">
-                <label for="name">Name</label>
-                <input required aria-describedby="name" type="text" id="name"/> </div>
-            <div class="pretty">
-                <label for="message">Message</label>
-                <input aria-describedby="type your message here" placeholder="Type your message here." type="text" id="message"/></div>
-            <div class="pretty">
-                <label for="email">Email</label>
-                <input required aria-describedby="type your email here" type="email" id="email" /></div>
-            <button>Submit</button>
-        </form>
-        <form class="form" action="#">
-           <div class="pretty"><label for="name">Name</label>
-                <input required type="text" id="name"/> </div>
-            <div class="pretty"><label for="message">Message</label>
-                <input placeholder="Type your message here." type="text" id="message"/></div>
-            <div class="pretty"><label for="email">Email</label>
-                <input required type="email" id="email" /></div>
-            <button>Submit</button>
-        </form>
+       
+      <p>
+        Have questions about our <a href="shop.html">products</a>?  <!-- Example of inline styling -->
+        Want more information about our
+        supply line? <br />
+        Need clarification about our process? <br />
+        Use the the contact form below and someone will get back with you
+        promptly.
+      </p>
+      <form class="form" action="#">
+        <div class="pretty">
+          <label id="name-label" for="name">Name</label>
+          <input
+            required
+            autofocus
+            aria-describedby="name-label"
+            type="text"
+            id="name"
+          />
+          <label for="message">Message</label>
+          <input
+            placeholder="Type your message here."
+            type="text"
+            id="message"
+          />
+        </div>
+        <div class="pretty">
+          <label for="email">Email</label>
+          <input required type="email" id="email" />
+          <button>Submit</button>
+        </div>
+      </form>
+      
+      <p class="block">Thank you for contacting us today!</p> <!-- Example of block styling  -->
     </main>
     <footer></footer>
-</body>
+  </body>
 </html>
